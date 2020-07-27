@@ -1,0 +1,22 @@
+{
+  "name": "daily-dose",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gatsby build"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "gatsby": "^2.24.11",
+    "gatsby-plugin-postcss": "^2.3.11",
+    "gatsby-source-youtube-v2": "^1.0.1",
+    "gatsby-theme-youtube": "^1.0.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "tailwindcss": "^1.5.2"
+  }
+}
