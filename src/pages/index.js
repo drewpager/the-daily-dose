@@ -5,20 +5,28 @@ import Layout from '../components/Layout';
 export default function Home({ data }) {
   return (
     <Layout>
-      <div className="container mx-auto flex justify-center items-center">
+      <div className="sm:block mx-automd:container mx-auto flex justify-center items-center">
         <div className="p-16">
           <h1 className="text-6xl">The Daily Dose</h1>
           <h3 className="ml-3">Insights in 3 Minutes Tight</h3>
-          <form class="w-full max-w-sm mt-8">
-          <div class="flex items-center border-b border-b-2 border-orange-500 py-2">
-            <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="jane@doe.com" aria-label="Email"/>
-            <button class="flex-shrink-0 bg-orange-600 hover:bg-orange-700 border-orange-600 hover:border-orange-700 text-sm border-4 text-white py-1 px-2 rounded" type="button">
+          <form 
+            className="w-full max-w-sm mt-8"
+            method="PUT"
+            action="https://api.sendgrid.com/v3/marketing/contacts"
+            list_ids="03df10cd-03e9-4ce9-ac6f-8b4a3c4179f8"
+          >
+          <div className="flex items-center border-b border-b-2 border-orange-500 py-2">
+            <input className="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" 
+              type="text" 
+              placeholder="jane@doe.com" 
+              aria-label="Email"/>
+            <button className="flex-shrink-0 bg-orange-600 hover:bg-orange-700 border-orange-600 hover:border-orange-700 text-sm border-4 text-white py-1 px-2 rounded" type="button">
               Sign Up
             </button>
           </div>
         </form>
         </div>
-        <div clasName="p-16">
+        <div className="p-16">
         <svg className="w-64" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 885.619 579.765">
             <path fill="#e6e6e6" d="M.261.346h610.532v391.012H.261z"/>
             <path fill="#fff" d="M17.719 49.389h575.616v318.837H17.719z"/>

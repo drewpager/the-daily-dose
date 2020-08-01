@@ -1,20 +1,15 @@
 import React from 'react';
-import { graphql } from 'gatsby';
+import Img from 'gatsby-image';
 import Layout from '../components/Layout';
+import HeaderImage from '../components/Header';
 
-export const query = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-  }
-`
-export default function About({ data }) {
+export default function About({ fluid } = HeaderImage) {
   return (
     <Layout>
-      <h1>{data.site.siteMetadata.title} About page</h1>
+      <h1>About page</h1>
+      <HeaderImage 
+        fluid={fluid}
+        />
     </Layout>
   )
 }
