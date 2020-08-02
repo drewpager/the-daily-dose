@@ -8,6 +8,14 @@ module.exports = {
     `gatsby-plugin-postcss`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-source-graphql`, 
+      options: {
+        typeName: 'WPGraphQL',
+        fieldName: 'wpgraphql',
+        url: 'http://dailydosenow.com/graphql',
+      }
+    },
     { resolve: `gatsby-source-filesystem`, options: { path: `./src/data/`} },
     {
       resolve: `gatsby-source-youtube-v2`,

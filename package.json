@@ -16,6 +16,7 @@
     "gatsby-plugin-postcss": "^2.3.11",
     "gatsby-plugin-sharp": "^2.6.24",
     "gatsby-source-filesystem": "^2.3.23",
+    "gatsby-source-graphql": "^2.6.2",
     "gatsby-source-youtube-v2": "^1.0.1",
     "gatsby-theme-youtube": "^1.0.0",
     "gatsby-transformer-sharp": "^2.5.12",

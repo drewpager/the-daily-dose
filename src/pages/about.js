@@ -1,15 +1,11 @@
 import React from 'react';
-import Img from 'gatsby-image';
 import Layout from '../components/Layout';
-import HeaderImage from '../components/Header';
+import Card from '../components/Card';
 
-export default function About({ fluid } = HeaderImage) {
+export default function About() {
   return (
     <Layout>
-      <h1>About page</h1>
-      <HeaderImage 
-        fluid={fluid}
-        />
+      <Card />
     </Layout>
   )
 }

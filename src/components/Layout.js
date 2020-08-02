@@ -1,19 +1,19 @@
 import React from 'react';
-import { Link, useStaticQuery, graphql } from 'gatsby';
+import { Link } from 'gatsby';
 import '../styles/tailwind.css';
 
 export default function Layout({children}) {
-  const data = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-          }
-        }
-      }
-    `
-  )
+  // const data = useStaticQuery(
+  //   graphql`
+  //     query {
+  //       site {
+  //         siteMetadata {
+  //           title
+  //         }
+  //       }
+  //     }
+  //   `
+  // )
   return (
     <div>
       <header className="container p-8 mx-auto flex justify-between">
@@ -23,7 +23,7 @@ export default function Layout({children}) {
           </Link>
         </div>
         <div>
-        <button className="bg-orange-600 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded">
+        <button className="btn">
           Subscribe
         </button>
         </div>

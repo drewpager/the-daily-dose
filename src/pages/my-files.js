@@ -3,7 +3,6 @@ import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 
 export default function MyFiles({ data }) {
-  console.log(data);
   return (
     <Layout>
       <h1>All Files Page</h1>

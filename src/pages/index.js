@@ -1,11 +1,12 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
+import Card from '../components/Card';
 
 export default function Home({ data }) {
   return (
     <Layout>
-      <div className="sm:block mx-automd:container mx-auto flex justify-center items-center">
+      <div className="container mx-auto flex justify-center items-center">
         <div className="p-16">
           <h1 className="text-6xl">The Daily Dose</h1>
           <h3 className="ml-3">Insights in 3 Minutes Tight</h3>
@@ -20,7 +21,7 @@ export default function Home({ data }) {
               type="text" 
               placeholder="jane@doe.com" 
               aria-label="Email"/>
-            <button className="flex-shrink-0 bg-orange-600 hover:bg-orange-700 border-orange-600 hover:border-orange-700 text-sm border-4 text-white py-1 px-2 rounded" type="button">
+            <button className="flex-shrink-0 btn" type="button">
               Sign Up
             </button>
           </div>
@@ -49,12 +50,7 @@ export default function Home({ data }) {
           </svg>
         </div>
       </div>
-      {data.allYoutubeVideo.edges.forEach(i => (
-        <div className="container mx-auto">
-          <p className="text-2xl">{i.node.title}</p>
-          <img className="w-15 p-10" src={i.node.thumbnail.url} alt="soda can"/>
-        </div>
-      ))}     
+      <Card />
     </Layout>
   )
 }

@@ -18,7 +18,7 @@ export default function HeaderImage() {
   return (
     <Img 
       fluid={data.file.childImageSharp.fluid} 
-      className="h-64 w-64 shadow-lg"
-      />
+      className="h-64 w-screen shadow-lg rounded-md"
+    />
   )
 }
